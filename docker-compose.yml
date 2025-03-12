@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres
+    container_name: next-starter-kit-db
+    environment:
+      POSTGRES_USER: next-starter-kit
+      POSTGRES_PASSWORD: next-starter-kit
+      POSTGRES_DB: next-starter-kit
+    ports:
+      - "5432:5432"
+    # volumes:
+    # - ~/docker-data/do-db:/var/lib/postgresql/data
+    restart: unless-stopped

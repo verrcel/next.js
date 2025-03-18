@@ -68,7 +68,7 @@ test("Register Existing User", async () => {
 test("Check User Password", async () => {
   try {
     const email = "admin@admin.com";
-    const password = "Admin123";
+    const password = "Admin123!";
 
     // Get the user by email from db
     const userFromDb = await getUserByEmail(email);
